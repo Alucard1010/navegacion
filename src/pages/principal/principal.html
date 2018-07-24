@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Principal - Root</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <!-- Esta es una forma de ir a la pagina 2 con el evento click-->
+  <button ion-button color="primary" block (click)="navegarPagina()"><!-- El block es para que el boton opcupe todo el ancho -->
+
+    Ir a pagina 2
+
+  </button>
+
+  <!-- Esta es otra forma de ir a la pagina 2 con el [navPush] y creando una variable de tipo any en principal.ts-->
+  <button ion-button color="secondary" block [navPush]="pagina2"><!-- El block es para que el boton opcupe todo el ancho -->
+
+    Ir a pagina 2 HTML
+
+  </button>
+
+</ion-content>
